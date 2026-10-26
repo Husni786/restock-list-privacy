@@ -293,7 +293,7 @@
         Your business data stays on your device and is never uploaded by the app.
       </p>
       <div class="meta">
-        <span class="pill">Last updated: 26 October 2026</span>
+        <span class="pill">Last updated: 27 October 2026</span>
         <span class="pill">Version 1.0</span>
         <span class="pill">Package: com.restock.retailer</span>
       </div>
@@ -376,9 +376,9 @@
         <h2>3. Information stored locally on your device</h2>
         <p>
           All data created within Restock List is stored on your device. Working data lives in an
-          internal, private Room SQLite database. When you create a backup, Restock List also
-          writes a complete JSON copy to <code>Download/Restock/Backups</code> so it survives an
-          app reinstall. This data may include:
+          internal, private Room SQLite database. When you create a backup, Restock List opens
+          Android's system file picker so you choose where to save a complete JSON copy. The app
+          does not receive broad storage access. This data may include:
         </p>
         <ul>
           <li><strong>Store profile:</strong> shop name, proprietor name, and optional contact email.</li>
@@ -413,17 +413,14 @@
           <li>
             <strong>File sharing and FileProvider:</strong> when you tap Export PDF or Export CSV,
             the app creates a temporary document in its cache and opens the Android Share Sheet.
-            You choose the destination app. Backups do not use the Share Sheet; they are saved
-            directly to <code>Download/Restock/Backups</code>.
+            You choose the destination app. Backups use Android's system save and open pickers
+            instead.
           </li>
           <li>
-            <strong>Backup folder access:</strong> Restock List needs access to
-            <code>Download/Restock/Backups</code> to save and restore backups. On Android 10 and
-            older this uses the standard storage permission. On Android 11 and newer, new backups
-            are written through Android's MediaStore without broad storage access. After a
-            reinstall, Android requires a one-time "All files access" grant so Restock List can
-            read the backups left by the previous install. The app only uses this access for its
-            backup folder and does not scan, modify, or upload other files.
+            <strong>Backup files (user-selected):</strong> Restock List uses Android's Storage
+            Access Framework to create and open JSON backups. The app can only access the exact
+            file you choose in the system picker. It does not request broad storage access or the
+            "All files access" permission.
           </li>
           <li>
             <strong>Notifications:</strong> on Android 13 and newer, notification permission is
@@ -451,8 +448,8 @@
         <p>
           You can control or disable this in Android Settings under
           <strong>System &gt; Backup</strong> (the exact path depends on your device). Restock List's
-          own Backup &amp; Restore feature writes a separate JSON backup to
-          <code>Download/Restock/Backups</code> on your device.
+          own Backup &amp; Restore feature writes a separate JSON backup to the location you choose
+          in Android's file picker.
         </p>
       </section>
 
@@ -464,9 +461,9 @@
           standard operating system security controls.
         </p>
         <p>
-          Backup files are <strong>not encrypted</strong>: they are standard JSON documents in a
-          public Downloads folder, so they can be read by anyone who can access that folder on
-          your device. Keep your device locked and delete old backups you no longer need.
+          Backup files are <strong>not encrypted</strong>: they are standard JSON documents in the
+          location you choose, so anyone who can access that location can read them. Keep your
+          device locked and delete old backups you no longer need.
         </p>
       </section>
 
@@ -484,10 +481,9 @@
             Storage &amp; cache &gt; Clear storage</strong>, or by uninstalling the application.
           </li>
           <li>
-            <strong>Backups:</strong> Restock List saves a complete JSON backup to
-            <code>Download/Restock/Backups</code> whenever you tap Backup Now. Backup files are
-            not removed when you uninstall the app; delete them with a file manager if you no
-            longer need them.
+            <strong>Backups:</strong> Restock List saves a complete JSON backup wherever you
+            choose in Android's save picker whenever you tap Backup Now. Backup files stay in
+            that location until you delete them.
           </li>
         </ul>
       </section>
@@ -527,7 +523,7 @@
           </tr>
           <tr>
             <th>Data stored locally</th>
-            <td><span class="yes">Yes</span>: on-device SQLite database plus local JSON backups.</td>
+            <td><span class="yes">Yes</span>: on-device SQLite database plus user-selected JSON backups.</td>
           </tr>
           <tr>
             <th>Data deletion</th>
@@ -547,7 +543,7 @@
     <footer>
       <p>
         Restock List · Android app <code>com.restock.retailer</code><br>
-        This policy is effective from 26 October 2026.
+        This policy is effective from 27 October 2026.
       </p>
     </footer>
   </div>
