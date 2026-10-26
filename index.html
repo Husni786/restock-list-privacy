@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Restock List, an offline-first restock and inventory app for retail shop owners.">
+  <title>Restock List — Privacy Policy</title>
+  <style>
+    :root {
+      --green-900: #073d28;
+      --green-800: #0b5d3b;
+      --green-700: #147a4e;
+      --green-100: #e7f4ed;
+      --green-50: #f4fbf7;
+      --ink: #16211b;
+      --muted: #52635a;
+      --line: #d8e6de;
+      --card: #ffffff;
+      --amber-50: #fff8e6;
+      --amber-700: #8a5a00;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--green-50);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--green-700); }
+    a:hover { color: var(--green-900); }
+
+    .page {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+
+    header.hero {
+      background: linear-gradient(135deg, var(--green-900), var(--green-700));
+      color: #ffffff;
+      border-radius: 22px;
+      padding: 34px 30px 30px;
+      box-shadow: 0 16px 40px rgba(7, 61, 40, 0.16);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.92;
+    }
+
+    .brand-mark {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.16);
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(1.85rem, 4vw, 2.6rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      max-width: 620px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 1rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+      font-size: 0.82rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 11px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 22px 0 0;
+    }
+
+    .summary-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 16px 14px;
+    }
+
+    .summary-card strong {
+      display: block;
+      color: var(--green-800);
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .summary-card span {
+      color: var(--muted);
+      font-size: 0.86rem;
+      line-height: 1.5;
+    }
+
+    .notice {
+      margin: 22px 0 0;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--amber-50);
+      border: 1px solid #f1dfb4;
+      color: #5e4300;
+      font-size: 0.92rem;
+    }
+
+    .notice strong { color: var(--amber-700); }
+
+    nav.toc {
+      margin: 26px 0 0;
+      padding: 18px 20px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+
+    nav.toc h2 {
+      margin: 0 0 10px;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    nav.toc ol {
+      margin: 0;
+      padding-left: 20px;
+      columns: 2;
+      column-gap: 28px;
+      font-size: 0.9rem;
+    }
+
+    nav.toc li { margin: 4px 0; break-inside: avoid; }
+
+    main { margin-top: 26px; }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px 24px;
+      margin-bottom: 14px;
+    }
+
+    section h2 {
+      margin: 0 0 10px;
+      font-size: 1.12rem;
+      line-height: 1.35;
+      color: var(--green-900);
+      letter-spacing: -0.01em;
+    }
+
+    section p { margin: 0 0 12px; }
+    section p:last-child { margin-bottom: 0; }
+
+    ul, ol { margin: 8px 0 12px; padding-left: 22px; }
+    li { margin: 6px 0; }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 0.92rem;
+    }
+
+    .data-table th,
+    .data-table td {
+      text-align: left;
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    .data-table th {
+      width: 34%;
+      color: var(--green-800);
+      font-weight: 700;
+      background: var(--green-50);
+    }
+
+    .data-table tr:last-child th,
+    .data-table tr:last-child td { border-bottom: 0; }
+
+    .yes { color: var(--green-800); font-weight: 700; }
+    .no { color: #a23a2a; font-weight: 700; }
+
+    .contact {
+      margin-top: 18px;
+      padding: 22px 24px;
+      border-radius: 16px;
+      background: var(--green-100);
+      border: 1px solid #cfe8da;
+    }
+
+    .contact h2 {
+      margin: 0 0 6px;
+      color: var(--green-900);
+      font-size: 1.1rem;
+    }
+
+    .contact p { margin: 0; color: #2d4639; }
+
+    .button {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: var(--green-800);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .button:hover { background: var(--green-900); color: #ffffff; }
+
+    footer {
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 620px) {
+      .page { padding: 18px 12px 40px; }
+      header.hero { padding: 26px 20px 24px; border-radius: 18px; }
+      .summary { grid-template-columns: 1fr; }
+      nav.toc ol { columns: 1; }
+      section { padding: 18px 18px; border-radius: 14px; }
+      .data-table th { width: 42%; }
+    }
+
+    @media print {
+      body { background: #ffffff; }
+      .page { max-width: none; padding: 0; }
+      header.hero { box-shadow: none; }
+      section, nav.toc, .summary-card, .contact { break-inside: avoid; }
+      a { color: var(--ink); }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">🛒</span>
+        Restock List
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        Restock List is an offline-first restock and inventory app for retail shop owners.
+        Your business data stays on your device and is never uploaded by the app.
+      </p>
+      <div class="meta">
+        <span class="pill">Last updated: 26 October 2026</span>
+        <span class="pill">Version 1.0</span>
+        <span class="pill">Package: com.restock.retailer</span>
+      </div>
+    </header>
+
+    <div class="summary" aria-label="Privacy summary">
+      <div class="summary-card">
+        <strong>No account required</strong>
+        <span>Restock List does not ask you to create an account or sign in.</span>
+      </div>
+      <div class="summary-card">
+        <strong>No ads or tracking</strong>
+        <span>No advertising SDKs, analytics, behavioural tracking, or tracking cookies.</span>
+      </div>
+      <div class="summary-card">
+        <strong>No server upload</strong>
+        <span>The app has no Internet permission and does not send your data to our servers.</span>
+      </div>
+      <div class="summary-card">
+        <strong>You control your data</strong>
+        <span>Edit or delete records in the app, or clear all app data from Android Settings.</span>
+      </div>
+    </div>
+
+    <div class="notice">
+      <strong>Important:</strong> Restock List itself does not collect or upload your data.
+      If you have enabled Android's system backup, your operating system may include app data
+      in your device backup. This is controlled by your Android/Google account settings, not by
+      Restock List. See <a href="#android-backup">Section 5</a>.
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#no-collection">Zero external data collection</a></li>
+        <li><a href="#local-data">Information stored on your device</a></li>
+        <li><a href="#permissions">Device permissions and system intents</a></li>
+        <li><a href="#android-backup">Android system backup</a></li>
+        <li><a href="#security">Data security and storage isolation</a></li>
+        <li><a href="#rights">User rights and data deletion</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#updates">Policy updates and contact</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <p>
+          Restock List is a standalone, offline-first mobile application built for retail store
+          owners, shopkeepers, and inventory managers. We respect your privacy and are committed
+          to protecting all information entered into the application.
+        </p>
+        <p>
+          This Privacy Policy explains what information the app stores, how it is kept on your
+          device, which Android permissions the app may request, and the choices you have over
+          your data. It applies to the Restock List Android application
+          (<strong>com.restock.retailer</strong>).
+        </p>
+      </section>
+
+      <section id="no-collection">
+        <h2>2. Zero external data collection</h2>
+        <p>
+          Restock List <strong>does not collect, store, transmit, or sell</strong> personal
+          identifiers or business data on any remote server. There are no user tracking
+          mechanisms, no third-party behavioural analytics tools, and no advertising network
+          SDKs bundled within this application.
+        </p>
+        <p>
+          The app does not request the Android <code>INTERNET</code> permission. It cannot upload
+          your inventory, supplier, profile, or purchase data to a server. When you choose to
+          share an export or open WhatsApp, the receiving app handles that action under its own
+          privacy policy.
+        </p>
+      </section>
+
+      <section id="local-data">
+        <h2>3. Information stored locally on your device</h2>
+        <p>
+          All data created within Restock List is stored on your device. Working data lives in an
+          internal, private Room SQLite database. When you create a backup, Restock List also
+          writes a complete JSON copy to <code>Download/Restock/Backups</code> so it survives an
+          app reinstall. This data may include:
+        </p>
+        <ul>
+          <li><strong>Store profile:</strong> shop name, proprietor name, and optional contact email.</li>
+          <li><strong>Inventory and restock items:</strong> item names, variants, pack sizes, quantities, units, wholesale prices, and discount percentages.</li>
+          <li><strong>Wholesaler contacts:</strong> supplier business names, phone numbers, and optional address or delivery notes.</li>
+          <li><strong>Purchase history:</strong> timestamped records of finalised restock orders and supplier unit-price changes.</li>
+          <li><strong>Preferences:</strong> units, categories, currency, theme, display size, and optional reminder time.</li>
+        </ul>
+        <p>
+          None of this data is transmitted to external servers by Restock List. It remains under
+          your control on your device and in the backup folder you choose to use.
+        </p>
+      </section>
+
+      <section id="permissions">
+        <h2>4. Device permissions and system intents</h2>
+        <p>
+          Restock List requests only the permissions needed for its core features. Depending on
+          your Android version and the features you use, these may include:
+        </p>
+        <ul>
+          <li>
+            <strong>Phone / dialer:</strong> when you tap the Call button next to a wholesaler,
+            the app opens your device dialer with the supplier's number pre-filled. Restock List
+            does not place automated calls or read your call logs.
+          </li>
+          <li>
+            <strong>WhatsApp / message:</strong> when you tap the WhatsApp action, the app opens
+            WhatsApp (or a browser) with a pre-filled order message. You choose whether to send
+            it. WhatsApp's own privacy policy applies to that message.
+          </li>
+          <li>
+            <strong>File sharing and FileProvider:</strong> when you tap Export PDF or Export CSV,
+            the app creates a temporary document in its cache and opens the Android Share Sheet.
+            You choose the destination app. Backups do not use the Share Sheet; they are saved
+            directly to <code>Download/Restock/Backups</code>.
+          </li>
+          <li>
+            <strong>Backup folder access:</strong> Restock List needs access to
+            <code>Download/Restock/Backups</code> to save and restore backups. On Android 10 and
+            older this uses the standard storage permission. On Android 11 and newer, new backups
+            are written through Android's MediaStore without broad storage access. After a
+            reinstall, Android requires a one-time "All files access" grant so Restock List can
+            read the backups left by the previous install. The app only uses this access for its
+            backup folder and does not scan, modify, or upload other files.
+          </li>
+          <li>
+            <strong>Notifications:</strong> on Android 13 and newer, notification permission is
+            requested only when you enable the optional daily restock reminder. The reminder is
+            scheduled locally on your device; no server push service is used and no inventory
+            data is included in the notification.
+          </li>
+          <li>
+            <strong>Restart reminders:</strong> the app uses Android's boot-completed signal only
+            to restore your chosen daily reminder after the device restarts. It does not read or
+            transmit personal data.
+          </li>
+        </ul>
+      </section>
+
+      <section id="android-backup">
+        <h2>5. Android system backup</h2>
+        <p>
+          Android includes an optional system backup service. If you have enabled backup in your
+          device or Google account settings, the operating system may include Restock List's app
+          data (such as its local database and preferences) in your device backup. This backup is
+          performed by Android/Google under your account settings, not by Restock List, and the
+          developer does not have access to it.
+        </p>
+        <p>
+          You can control or disable this in Android Settings under
+          <strong>System &gt; Backup</strong> (the exact path depends on your device). Restock List's
+          own Backup &amp; Restore feature writes a separate JSON backup to
+          <code>Download/Restock/Backups</code> on your device.
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>6. Data security and storage isolation</h2>
+        <p>
+          Your database is protected by Android application sandboxing. Other installed
+          applications on your device cannot access Restock List's private database files under
+          standard operating system security controls.
+        </p>
+        <p>
+          Backup files are <strong>not encrypted</strong>: they are standard JSON documents in a
+          public Downloads folder, so they can be read by anyone who can access that folder on
+          your device. Keep your device locked and delete old backups you no longer need.
+        </p>
+      </section>
+
+      <section id="rights">
+        <h2>7. User rights and data deletion</h2>
+        <p>You retain complete control over your business data:</p>
+        <ul>
+          <li>
+            <strong>Individual records:</strong> you can edit or delete any inventory item,
+            wholesaler, or past purchase record instantly in the app.
+          </li>
+          <li>
+            <strong>Full data erasure:</strong> you can permanently erase all application data at
+            any time by going to <strong>Android Settings &gt; Apps &gt; Restock List &gt;
+            Storage &amp; cache &gt; Clear storage</strong>, or by uninstalling the application.
+          </li>
+          <li>
+            <strong>Backups:</strong> Restock List saves a complete JSON backup to
+            <code>Download/Restock/Backups</code> whenever you tap Backup Now. Backup files are
+            not removed when you uninstall the app; delete them with a file manager if you no
+            longer need them.
+          </li>
+        </ul>
+      </section>
+
+      <section id="children">
+        <h2>8. Children's privacy</h2>
+        <p>
+          Restock List is a professional retail inventory utility intended for retail store
+          owners and business managers. It is not directed to children under the age of 13, and
+          no information from children is knowingly solicited or retained.
+        </p>
+      </section>
+
+      <section id="updates">
+        <h2>9. Policy updates and contact</h2>
+        <p>
+          Any updates to this Privacy Policy will be reflected on this page and in future
+          application releases. The "Last updated" date at the top of this page shows when the
+          policy was last revised.
+        </p>
+        <p>
+          For questions or support regarding privacy practices, please contact us at
+          <a href="mailto:contactme.bashar@gmail.com">contactme.bashar@gmail.com</a>.
+        </p>
+      </section>
+
+      <div class="contact">
+        <h2>Data safety summary</h2>
+        <table class="data-table">
+          <tr>
+            <th>Data collected remotely</th>
+            <td><span class="no">None</span> — the app has no Internet permission and does not send data to a server.</td>
+          </tr>
+          <tr>
+            <th>Data shared with third parties</th>
+            <td><span class="no">None</span> — no advertising, analytics, or data-broker SDKs.</td>
+          </tr>
+          <tr>
+            <th>Data stored locally</th>
+            <td><span class="yes">Yes</span> — on-device SQLite database plus local JSON backups.</td>
+          </tr>
+          <tr>
+            <th>Data deletion</th>
+            <td><span class="yes">Yes</span> — delete records in the app or clear all app data in Android Settings.</td>
+          </tr>
+          <tr>
+            <th>Children's data</th>
+            <td><span class="no">Not collected</span> — the app is intended for business users.</td>
+          </tr>
+        </table>
+        <a class="button" href="mailto:contactme.bashar@gmail.com?subject=Restock%20List%20Privacy%20Question">
+          Contact the developer
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Restock List · Android app <code>com.restock.retailer</code><br>
+        This policy is effective from 26 October 2026.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
